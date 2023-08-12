@@ -6,9 +6,7 @@
   justify-content: space-between;
 }
 main {
-  /* background-color: blanchedalmond; */
   width: 100%;
-  /* height: 20vh; */
 }
 figure {
   position: relative;
@@ -29,6 +27,9 @@ figure > img {
 .content_cont {
   padding: 0 3.2rem;
   margin-bottom: 4rem;
+}
+.content_cont:first-child {
+  padding-top: 2rem;
 }
 .content_head {
   text-transform: capitalize;

@@ -11,8 +11,6 @@ function Home() {
   const [sideData, setSideData] = useState([]);
   //   const [sideTabSelect, setSideTabSelect] = useState(0);
   const [contentData, setContentData] = useState([]);
-  const headerRef = useRef(null);
-  const footerRef = useRef(null);
 
   const tabsData = [
     { name: "introduction", id: 1 },
@@ -39,12 +37,9 @@ function Home() {
 
   //   }, [sideTabSelect]);
 
-  console.log("hello", headerRef);
-
   return (
     <div className={styles.container}>
       <Header
-        ref={headerRef}
         tabData={tabsData}
         selected={tabSelect}
         changeSelected={setTabSelect}
@@ -84,7 +79,7 @@ function Home() {
           </div>
         )}
       </main>
-      <Footer ref={footerRef} />
+      <Footer />
     </div>
   );
 }
