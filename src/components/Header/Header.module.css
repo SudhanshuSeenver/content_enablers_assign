@@ -1,0 +1,58 @@
+.header {
+  /* padding: 0 8rem; */
+}
+.header_logoMenu {
+  padding: 1rem 8rem;
+  border-bottom: 1px solid var(--color-text-light);
+}
+
+.logo {
+  font-size: 3.2rem;
+  letter-spacing: -1px;
+  font-weight: 300;
+}
+.logo > span {
+  color: var(--color-primary);
+}
+
+.header_tabs {
+  padding: 0 8rem 3.2rem 6rem;
+}
+
+.tabs_list {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  gap: 2rem;
+  text-transform: capitalize;
+}
+
+.tab_item {
+  padding: 1.25rem 2rem 0.75rem;
+  font-size: 2rem;
+  font-weight: 300;
+  cursor: pointer;
+  color: var(--color-text);
+}
+.tab_item > p {
+  pointer-events: none;
+}
+
+li.tab_selected {
+  position: relative;
+  background-color: var(--color-primary);
+  font-weight: 500;
+  color: var(--color-white);
+}
+
+.tab_selected::after {
+  content: "";
+  position: absolute;
+  border-bottom: 1rem solid transparent;
+  border-left: 1.6rem solid transparent;
+  border-right: 1.6rem solid transparent;
+  border-top: 1rem solid var(--color-primary);
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 100%);
+}
