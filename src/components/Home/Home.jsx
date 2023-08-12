@@ -9,7 +9,7 @@ import introductionImage from "../../assets/introduction.png";
 function Home() {
   const [tabSelect, setTabSelect] = useState(1);
   const [sideData, setSideData] = useState([]);
-  //   const [sideTabSelect, setSideTabSelect] = useState(0);
+
   const [contentData, setContentData] = useState([]);
 
   const tabsData = [
@@ -26,16 +26,7 @@ function Home() {
       (item) => item.name.toLowerCase() === tab.name.toLowerCase()
     );
     setSideData(contentTabs ? contentTabs.tabs : []);
-    // setSideTabSelect(contentTabs.tabs[0].id)
-    // setSideTabSelectData(contentTabs.tabs[0].list)
   }, [tabSelect]);
-
-  //   useEffect(() => {
-
-  //     const data = sideData.find(it => it.id === sideTabSelect)
-  //     setSideTabSelectData(data.list)
-
-  //   }, [sideTabSelect]);
 
   return (
     <div className={styles.container}>
